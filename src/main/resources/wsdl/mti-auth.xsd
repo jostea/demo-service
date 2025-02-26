@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/soap/auth"
+           xmlns="http://example.com/soap/auth"
+           elementFormDefault="qualified">
+
+    <xs:element name="AuthRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mti" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="AuthResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="requestMti" type="xs:string"/>
+                <xs:element name="responseMti" type="xs:string"/>
+                <xs:element name="description" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

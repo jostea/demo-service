@@ -1,0 +1,4 @@
+package org.example.soap.controllers;
+
+public class AuthController {
+}

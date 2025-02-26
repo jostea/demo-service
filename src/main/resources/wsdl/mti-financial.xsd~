@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/soap/financial"
+           xmlns="http://example.com/soap/financial"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="FinancialRequestType">
+        <xs:sequence>
+            <xs:element name="mti" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="FinancialResponseType">
+        <xs:sequence>
+            <xs:element name="requestMti" type="xs:string"/>
+            <xs:element name="responseMti" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="FinancialRequest" type="FinancialRequestType"/>
+    <xs:element name="FinancialResponse" type="FinancialRequestType"/>
+
+</xs:schema>

@@ -1,0 +1,23 @@
+<!--<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"-->
+<!--           targetNamespace="http://example.com/soap"-->
+<!--           xmlns="http://example.com/soap"-->
+<!--           elementFormDefault="qualified">-->
+
+<!--    <xs:complexType name="MtiSoapRequestType">-->
+<!--        <xs:sequence>-->
+<!--            <xs:element name="mti" type="xs:string"/>-->
+<!--        </xs:sequence>-->
+<!--    </xs:complexType>-->
+
+<!--    <xs:complexType name="MtiSoapResponseType">-->
+<!--        <xs:sequence>-->
+<!--            <xs:element name="requestMti" type="xs:string"/>-->
+<!--            <xs:element name="responseMti" type="xs:string"/>-->
+<!--            <xs:element name="description" type="xs:string"/>-->
+<!--        </xs:sequence>-->
+<!--    </xs:complexType>-->
+
+<!--    <xs:element name="MtiSoapRequest" type="MtiSoapRequestType"/>-->
+<!--    <xs:element name="MtiSoapResponse" type="MtiSoapResponseType"/>-->
+
+<!--</xs:schema>-->

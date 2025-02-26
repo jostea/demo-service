@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/soap/network"
+           xmlns="http://example.com/soap/network"
+           elementFormDefault="qualified">
+    <xs:element name="NetworkRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mti" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="NetworkResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="requestMti" type="xs:string"/>
+                <xs:element name="responseMti" type="xs:string"/>
+                <xs:element name="description" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
